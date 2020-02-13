@@ -1,0 +1,861 @@
+/* 
+Author : Samarth Nayyar & Anirudh Kasturi
+
+    |\    |    ||||||   |=====   |=====
+    | \   |    -    -   |    |   |
+    |  \  |    -    -   |    |   |=====
+    |   \ |    -    -   |    |   |
+    |    \|    ||||||   |=====   |=====
+     
+
+
+DPS GURGAON 
+*/
+ html{
+    height:100%; 
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+a{
+    text-decoration: none !important;
+    color: #666;
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul > a {
+    text-decoration: none;
+}
+
+h3 {
+    width: 100px
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.verticalcenter {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+button:hover {
+    cursor: pointer
+}
+
+p, h1, h2, h3:hover {
+    cursor: default;
+}
+
+button, h1, h2, h3, h4, h5, h6, text, a, p{
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+}
+
+.iPhone-button{
+
+}
+
+#Capa_1{
+    position: fixed;
+    display: none;
+    top: 69px;
+    left: 50px;
+    z-index: 13;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+
+#in, #inl{
+    -webkit-transition: all .4s cubic-bezier(0.460, 0.150, 0.000, 0.985);
+    -moz-transition: all .4s cubic-bezier(0.460, 0.150, 0.000, 0.985);
+    -o-transition: all .4s cubic-bezier(0.460, 0.150, 0.000, 0.985);
+    transition: all .4s cubic-bezier(0.460, 0.150, 0.000, 0.985);
+}
+
+#Capa_1:hover{
+    cursor: pointer;
+}
+
+#Capa_1:hover #inl{
+    width: 250px;
+}
+
+#Capa_1:hover #in{
+    width: 150px;
+} 
+
+.resp-menu{
+    position: fixed;
+    left: -100%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    //display: none;
+    z-index: 12;
+    -webkit-transition: all 500ms cubic-bezier(0.725, 0.225, 0.015, 0.990); 
+    -moz-transition: all 500ms cubic-bezier(0.725, 0.225, 0.015, 0.990); 
+    -o-transition: all 500ms cubic-bezier(0.725, 0.225, 0.015, 0.990); 
+    transition: all 500ms cubic-bezier(0.725, 0.225, 0.015, 0.990);
+}
+
+.resp-menu > .resp-button{
+    display: block;
+    font-size: 22px;
+    position: relative;
+    margin: 27px auto auto auto;
+    background: transparent;
+    font-weight: 200;
+    outline: none;
+    border: transparent;
+    color: #fff;
+    z-index: 12;
+    padding: 11px 6px 11px 6px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.anim{
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 500ms cubic-bezier(0.725, 0.225, 0.015, 0.990); 
+    -moz-transition: all 500ms cubic-bezier(0.725, 0.225, 0.015, 0.990); 
+    -o-transition: all 500ms cubic-bezier(0.725, 0.225, 0.015, 0.990); 
+    transition: all 500ms cubic-bezier(0.725, 0.225, 0.015, 0.990);
+}
+
+/*
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+    -webkit-background: #8CC63F;
+}*/
+
+@font-face{
+    font-family: Futura Light;
+    src: url("Futura Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: Lovelo Line Bold;
+    src: url("Lovelo Line Bold.ttf")
+}
+
+@font-face {
+    font-family: CircularStd-Book;
+    src: url("CircularStd-Book.otf") format("opentype")
+}
+
+@font-face {
+    font-family: coolvetica rg;
+    src: url("coolvetica rg.ttf")
+}
+
+@font-face {
+    font-family: kirvy;
+    src: url("Kirvy-Light.ttf")
+}
+
+@font-face {
+    font-family: Glober Thin;
+    src: url("Glober Thin.ttf")
+}
+
+@font-face{
+    font-family: maax-bold-webfont;
+    src: url("maax-bold-webfont.woff") format("woff");
+}
+
+@font-face{
+    font-family: freigtexpromed-webfont;
+    src: url("freigtexpromed-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: BebasNeue Regular;
+    src: url("BebasNeue Regular.ttf")
+}
+
+@font-face {
+    font-family: ostrich-black;
+    src: url("ostrich-black.ttf")
+}
+
+@font-face {
+    font-family: ostrich-bold;
+    src: url("ostrich-bold.ttf")
+}
+
+@font-face {
+    font-family: TESLA;
+    src: url("TESLA.ttf")
+}
+
+@font-face {
+    font-family: ostrich-light;
+    src: url("ostrich-light.ttf")
+}
+
+@font-face{
+    font-family: Champ;
+    src: url("Champ.ttf");
+}
+
+@font-face {
+    font-family: Corbert-Regular;
+    src: url("Corbert-Regular.otf") format("opentype")
+}
+
+@font-face {
+    font-family: ostrich-light;
+    src: url("ostrich-light.ttf")
+}
+
+@font-face {
+    font-family: ostrich-regular;
+    src: url("ostrich-regular.ttf")
+}
+
+@font-face {
+    font-family: ostrich-rounded;
+    src: url("ostrich-rounded.ttf")
+}
+
+@font-face {
+    font-family: Aileron-UltraLight;
+    src: url("Aileron-UltraLight.ttf")
+}
+
+.cool {
+    font-family: 'coolvetica rg', sans-serif
+}
+
+.bit{
+    font-family: 'Bitter', serif;
+}
+
+.cham{
+    font-family: 'Champ', sans-serif;
+}
+
+.max{
+    font-family: 'maax-bold-webfont', sans-serif;
+}
+
+.corr {
+    font-family: 'Corbert-Regular', sans-serif
+}
+
+.glo {
+    font-family: 'Glober Thin', sans-serif
+}
+
+.opn{
+  font-family: 'Open Sans', sans-serif;;
+}
+
+.circ {
+    font-family: 'CircularStd-Book', sans-serif
+}
+
+.ral {
+    font-family: 'Raleway', sans-serif
+}
+
+.beb {
+    font-family: 'BebasNeue Regular', sans-serif
+}
+
+.rob-con{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.fr{
+    font-family: 'freigtexpromed-webfont', sans-serif;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.rob {
+    font-family: 'Roboto', sans-serif
+}
+
+.garry {
+    font-family: 'EB Garamond', serif
+}
+
+.duru {
+    font-family: 'Duru Sans', sans-serif
+}
+
+.air {
+    font-family: 'Aileron-UltraLight', sans-serif
+}
+
+.poiret {
+    font-family: 'Poiret One', cursive
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.tesla{
+    font-family: 'TESLA', sans-serif;
+}
+
+.mont{
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.play{
+    font-family: 'Playfair Display SC', serif;;
+}
+
+.kirvy {
+    font-family: 'kirvy', sans-serif
+}
+
+.futura{
+    font-family: 'Futura Light', sans-serif;
+}
+
+.lovelo {
+    font-family: 'Lovelo Line Bold', sans-serif
+}
+
+.sor {
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+.osb {
+    font-family: 'ostrich-black', sans-serif
+}
+
+.osbo {
+    font-family: 'ostrich-bold', sans-serif
+}
+
+.osl {
+    font-family: 'ostrich-light', sans-serif
+}
+
+.osr {
+    font-family: 'ostrich-regular', sans-serif
+}
+
+.osro {
+    font-family: 'ostrich-rounded', sans-serif
+}
+
+
+.main{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.logo{
+    height: 54px;
+    width: 145.18px;
+    margin: auto auto;
+    display: block;
+    position: relative;
+    top: 80px;
+    left: -5px;
+    -o-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.menu{
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 800px;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    right: 0;
+    z-index: 13;   
+}
+
+.white{
+    fill: #fff;
+    color: #fff !important;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.commit{
+    display: inline-block;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    color: #333;
+    background: transparent;
+    outline: none;
+    position: relative;
+    top: 50px;
+    border: transparent;
+    margin-left: 60px !important;
+    padding: 11px 6px 11px 6px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.member{
+    height: 400px;
+    width: 200px;
+}
+
+
+.down{
+    position: absolute;
+    left: 1px;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #333;
+    opacity: 0;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.commit:hover .down{
+    opacity: 1;
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -o-transform: translateY(3px);
+    transform: translateY(3px);
+}
+
+.ga .member{
+    width: 1220px;
+}
+
+.sc .member{
+    width: 910px;
+}
+
+.hrc .member{
+    width: 910px;
+}
+
+.ecosoc .member{
+    width: 910px;
+}
+
+.aippm .member{
+    width: 910px;
+}
+
+.jcc .member{
+    width: 1220px;
+}
+
+
+.member{
+    height: 300px;
+    margin: auto auto;
+    position: relative;
+    top: 120px;
+}
+/*
+.sc,.hrc,.ecosoc, .aippm > .member > .member-child{
+    margin-left: 140px !important;
+}
+*/
+
+.member-child{
+    display: inline-block;
+    height: 260px;
+    width: 300px;
+    position: relative;
+    top: 30px;
+}
+
+.ga, .sc, .hrc, .ecosoc, .aippm, .jcc{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 450px;
+}
+
+.pic{
+    display: block;
+    margin: auto;
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    position: absolute; 
+    top: 30px;
+    left: 0;
+    right: 0;
+    /*-webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    transform: rotate(40deg);*/
+}
+
+.jcc ,.hrc, .ecosoc, .sc, .aippm{
+    display: none;
+}
+
+.desig{
+    top: 210px !important;
+    font-size: 18px !important;
+}
+
+.name{
+    letter-spacing: 1.1px;
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    line-height: 10px;
+}
+
+.shivish{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(GA_EB/Shivish_Soni.jpg);
+    background-size: cover;
+}
+
+.mahim{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(GA_EB/Mahim_Tiwari.jpg);
+    background-size: cover;
+}
+
+.mitul{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(GA_EB/mitul.JPG);
+    background-size: cover;
+}
+
+.pankh{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(GA_EB/Pankhuri.jpg);
+    background-size: cover;
+}
+
+.aman{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(SC_EB/aman.jpg);
+    background-size: cover;
+}
+
+.Agastya{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(SC_EB/agastya.jpg);
+    background-size: cover;
+}
+
+.ishita{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(SC_EB/ishita.jpg);
+    background-size: cover;
+}
+
+.Eklavya{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(HRC_EB/Eklavya.jpg);
+    background-size: cover;
+}
+
+.prashant{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(HRC_EB/prashant.jpg);
+    background-size: cover;
+}
+
+.praniti{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(HRC_EB/praniti.jpg);
+    background-size: cover;   
+}
+
+.rhea{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(ECOSOC_EB/rhea.jpg);
+    background-size: cover;   
+}
+
+.rud{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(ECOSOC_EB/rud.jpg);
+    background-size: cover;   
+}
+
+.smriti{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(ECOSOC_EB/smriti.jpg);
+    background-size: cover;    
+}
+
+.sansan{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(AIPPM_EB/sansan.png);
+    background-size: cover;    
+}
+
+.anuj{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(AIPPM_EB/anuj.png);
+    background-size: cover;    
+}
+
+.joon{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(AIPPM_EB/nivedita.png);
+    background-size: cover;    
+}
+
+.joon{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(AIPPM_EB/nivedita.png);
+    background-size: cover;    
+}
+                               
+.ali{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(JCC_EB/ali.JPG);
+    background-size: cover;    
+}
+
+.john{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(JCC_EB/john.png);
+    background-size: cover;    
+}
+
+.rahul{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(JCC_EB/rahul.jpg);
+    background-size: cover;    
+}
+
+.akshit{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(JCC_EB/akshit.jpg);
+    background-size: cover;    
+}
+
+.say{
+    width: 53%;
+    font-size: 18px;  
+    text-align: center;
+    line-height: 28px;
+    color: #333;
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: 420px;
+    left: 0;
+    right: 0;   
+    letter-spacing: 1.2px;
+}
+            @media(max-height: 847px){
+                .member{
+                    top: 250px;
+                }  
+            }
+
+            @media(max-height: 750px){
+                .member{
+                    top: 320px;
+                }  
+            }
+    
+            @media(max-width: 880px){
+                .menu{
+                    display: none;
+                }
+
+                #Capa_1{
+                    display: block;
+                }
+            }
+
+
+            /* Large desktops and laptops */
+            @media (min-width: 1200px) {
+
+            }
+
+            /* Landscape tablets and medium desktops */
+            @media (min-width: 992px) and (max-width: 1199px) {
+
+                .member{
+                    position: relative;
+                    top: 100px;
+                }
+
+                .ga .member{
+                    width: 610px;
+                }
+
+                .jcc .member{
+                    width: 610px;
+                }
+
+            }
+
+            /* Portrait tablets and small desktops */
+            @media (min-width: 768px) and (max-width: 991px) {
+
+                .menu{
+                    display: none;
+                }
+
+                #Capa_1{
+                    display: block;
+                }
+
+                .say{
+                    top: 300px;
+                }
+
+                .member{
+                    position: relative;
+                    top: 30px;
+                }
+
+                .ga .member{
+                    width: 610px;
+                }
+
+                .jcc .member{
+                    width: 610px;
+                }
+
+
+            }
+
+            /* Landscape phones and portrait tablets */
+            @media (max-width: 768px) {
+
+                .resp-menu .resp-button{
+                    font-size: 22px;
+                    margin: 80px auto auto auto; 
+                }
+
+                .say{
+                    top: 280px;
+                }
+
+                .member{
+                    position: relative;
+                    top: 0px;
+                }
+
+                .ga .member{
+                    width: 610px;
+                }
+
+                .sc .member{
+                    width: 610px;
+                }
+
+                .hrc .member{
+                    width: 610px;
+                }
+
+                .ecosoc .member{
+                    width: 610px;
+                }
+
+                .aippm .member{
+                    width: 610px;
+                }
+
+                .jcc .member{
+                    width: 610px;
+                }
+
+            }
+
+            /* Portrait phones and smaller */
+            @media (max-width: 480px) {
+
+                .say{
+                    top: 160px;
+                }
+
+                .resp-menu .resp-button{
+                    font-size: 18px;
+                    margin: 42px auto auto auto; 
+                }
+
+                .logo{
+                    top: 48px;
+                    -webkit-transform: scale(0.8) !important;
+                    -moz-transform: scale(0.8) !important;
+                    -o-transform: scale(0.8) !important;
+                    transform: scale(0.8) !important;
+                }
+
+                #Capa_1{
+                    top: 50px;
+                    display: block;
+                    -webkit-transform: scale(0.91);
+                    -moz-transform: scale(.91);
+                    -o-transform: scale(.91);
+                    transform: scale(.91);
+                    left: 25px;
+                }
+
+                .member{
+                    position: relative;
+                    top: 420px;
+                }
+
+                .ga .member{
+                    width: 305px;
+                }
+
+                .sc .member{
+                    width: 305px;
+                }
+
+                .hrc .member{
+                    width: 305px;
+                }
+
+                .ecosoc .member{
+                    width: 305px;
+                }
+
+                .aippm .member{
+                    width: 305px;
+                }
+
+                .jcc .member{
+                    width: 305px;
+                }
+
+            }

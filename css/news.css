@@ -1,0 +1,345 @@
+/* 
+Author : Anirudh Kasturi
+DPS GURGAON 
+***The website is not fluid responsive. Website incomplete do not consider as final!.***
+*/
+
+
+body{
+	margin: 0px;
+}
+
+ul{
+	list-style: none;
+}
+
+li:hover,button:hover{
+	cursor: pointer;
+}
+
+button{
+	background: transparent;
+	border: transparent;
+	outline: none;
+}
+
+::-moz-selection { 
+	background-color: rgba(189, 195, 199, 0.77); 
+	color: #fff;
+}
+
+::-webkit-selection { 
+	background-color: rgba(189, 195, 199, 0.77); 
+	color: #fff;
+}
+
+::-o-selection { 
+	background-color: rgba(189, 195, 199, 0.77); 
+	color: #fff;
+}
+
+::selection {
+	background-color: rgba(189, 195, 199, 0.77);
+	color: #fff;		
+}
+
+@font-face{
+	font-family: BebasNeue Regular;
+	src: url("BebasNeue Regular.ttf");
+}
+
+@font-face{
+	font-family: Georgia;
+	src: url("Georgia.ttf");
+}
+
+@font-face{
+	font-family: ostrich-regular;
+	src: url("ostrich-regular.ttf");
+}
+
+@font-face{
+	font-family: ostrich-black;
+	src: url("ostrich-black.ttf");
+}
+
+@font-face{
+	font-family: Lovelo Line Bold;
+	src: url("Lovelo Line Bold.ttf");
+}
+
+@font-face{
+	font-family: kirvy;
+	src: url("Kirvy-Light.ttf");
+}
+
+@font-face{
+	font-family: Origin-Regular;
+	src: url("Origin-Regular.ttf");
+}
+
+@font-face{
+	font-family: light;
+	src: url("light.ttf");
+}
+
+@font-face{
+	font-family: Aileron-Thin;
+	src: url("Aileron-Thin.otf") format("opentype");
+}
+
+@font-face{
+	font-family: Canaro-Light;
+	src: url("Canaro-Light.oft") format("opentype");
+}
+
+@font-face{
+	font-family: Novecentosanswide-DemiBold-webfont;
+	src: url("Webfonts/novecentosanswide_demibold_macroman/Novecentosanswide-DemiBold-webfont.ttf");
+}
+
+
+@font-face {
+    font-family: Velino Sans Light;
+    src: url('Velino Sans Light.woff2') format('woff2');
+}
+
+@font-face{
+	font-family: RobotoCondensed-Light;
+	src:url("RobotoCondensed-Light.ttf");
+}
+
+@font-face{
+	font-family: LeagueGothic-Regular;
+	src: url("LeagueGothic-Regular.otf") format("opentype");
+}
+
+@font-face{
+	font-family: Raleway-ExtraLight;
+	src: url("Raleway-ExtraLight.ttf");
+}
+
+@font-face{
+	font-family: Freshman;
+	src: url("Freshman.ttf");
+}
+
+.fresh{
+	font-family: 'Freshman', sans-serif;
+}
+
+.mont{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nov{
+	font-family: 'Novecentosanswide-DemiBold-webfont', sans-serif;
+}
+
+.vel{
+	font-family: 'Velino Sans Light', sans-serif;
+}
+
+.can{
+	font-family: 'Canaro-Light', sans-serif;
+}
+
+.ori{
+	font-family: 'Origin-Regular', sans-serif;
+}
+
+.osr{
+	font-family: 'ostrich-regular', sans-serif;
+}
+
+.osb{
+	font-family: 'ostrich-black', sans-serif;
+}
+
+.league{
+	font-family: 'LeagueGothic-Regular', sans-serif;
+}
+
+.ral {
+	font-family: 'Raleway-ExtraLight', sans-serif;
+}
+
+.air-t{
+	font-family: 'Aileron-Thin', sans-serif;
+}
+
+.geo{
+	font-family: 'Georgia', sans-serif;
+}
+
+.homi{
+	font-family: 'light', sans-serif;
+}
+
+.rob{
+	font-family: 'RobotoCondensed-Light', sans-serif;
+}
+
+.beb{
+	font-family: 'BebasNeue Regular', sans-serif;
+}
+
+.kirvy{
+	font-family: 'kirvy', sans-serif;
+}
+
+.lovelo{
+	font-family: 'Lovelo Line Bold', sans-serif;
+}
+
+.opn{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.vc {
+  position: relative;
+  top: 50% !important;
+  -webkit-transform: translateY(-50%) !important;
+  -o-transform: translateY(-50%) !important;
+  transform: translateY(-50%) !important;
+}
+
+.title{
+	font-weight: 700;
+	color: #313338;
+	font-size: 60px;
+	float: right;
+	position: absolute;
+	top: 50px;
+	right: 75px;
+	border-bottom: solid 10px #ff554e;
+}
+
+.cat{
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	top: 340px;
+	border-bottom: solid 1px rgba(189, 195, 199, 0.37);
+}
+
+.cat h2{
+	display: inline;
+	color: #8c9099;
+	margin: 0;
+	font-weight: 100;
+	font-size: 24px;
+	font-weight: 100;
+	margin-left: 19vw;
+	position: relative;
+	top: 50px;
+}
+
+.msgs{
+	height: 100vh;
+	widows: 100vw;
+	position: relative;
+	top: 440px;
+}
+
+.msgs .msg{
+	height: 150px;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0px;
+}
+
+.msg h1{
+	display: inline-block;
+	margin-left: 20vw;
+}
+
+.msg .c-l{
+	color: rgba(189, 195, 199, 0.7);
+	font-weight: 100;
+	font-size: 43px;
+	position: relative;
+	top: 25px;
+}
+
+.msg .m{
+	color: rgba(189, 195, 199, 1);
+	font-size: 18px;
+	position: relative;
+	top: 30px;
+	height: 70px;
+	width: 200px;
+}
+
+.msg .is{
+	color: rgba(189, 195, 199, 0.8);
+	margin-left: 12.9vw;
+	position: relative;
+	top:20px;
+	font-size: 35px;
+	font-weight: 100;
+}
+
+/* IT"S ALL HELL FROM HERE!*/ 
+
+@media(max-width: 1100px){
+	.cat h2, .msg h1{
+		margin-left: 18vw;
+	}
+}
+
+@media(max-width: 950px){
+	.title{
+		font-size: 54px;
+		border-bottom: solid 8px #ff554e;
+	}
+
+	.cat h2, .msg h1{
+		margin-left: 17vw;
+	}	
+}
+
+@media(max-width: 800px){
+	.cat h2, .msg h1{
+		margin-left: 15.5vw;
+	}	
+}
+
+/*iPad*/
+
+@media(width: 768px){
+	.cat h2, .msg h1{
+		font-size: 23px;
+		margin-left: 15.6vw;
+	}	
+}
+
+@media(max-width: 700px){
+	.cat{
+		height: 95px;
+	}
+
+	.cat h2, , .msg h1{
+		font-size: 22px;
+		margin-left: 14.7vw;
+	}	
+}
+
+@media(max-width: 600px){
+
+	.cat{
+		height: 90px;
+	}
+
+	.cat h2, .msg h1{
+		font-size: 20px;
+		margin-left: 14vw;
+	}
+}
+
+@media(max-width: 599px){
+	.cat{
+		display: none;
+	}
+}

@@ -1,0 +1,623 @@
+/* 
+Author : Anirudh Kasturi
+
+    |\    |    ||||||   |=====   |=====
+    | \   |    -    -   |    |   |
+    |  \  |    -    -   |    |   |=====
+    |   \ |    -    -   |    |   |
+    |    \|    ||||||   |=====   |=====
+     
+
+
+DPS GURGAON 
+*/
+
+html{
+    height:100%; 
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+a{
+    text-decoration: none !important;
+    color: #666;
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul > a {
+    text-decoration: none;
+}
+
+h3 {
+    width: 100px
+}
+
+.verticalcenter {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+button:hover {
+    cursor: pointer
+}
+
+p, h1, h2, h3:hover {
+    cursor: default;
+}
+
+
+
+button, h1, h2, h3, h4, h5, h6, text, a, p{
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+}
+
+
+
+/*
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+    -webkit-background: #8CC63F;
+}*/
+
+@font-face {
+    font-family: Lovelo Line Bold;
+    src: url("Lovelo Line Bold.ttf")
+}
+
+@font-face {
+    font-family: CircularStd-Book;
+    src: url("CircularStd-Book.otf") format("opentype")
+}
+
+@font-face {
+    font-family: coolvetica rg;
+    src: url("coolvetica rg.ttf")
+}
+
+@font-face {
+    font-family: kirvy;
+    src: url("Kirvy-Light.ttf")
+}
+
+@font-face {
+    font-family: Glober Thin;
+    src: url("Glober Thin.ttf")
+}
+
+@font-face{
+    font-family: maax-bold-webfont;
+    src: url("maax-bold-webfont.woff") format("woff");
+}
+
+@font-face{
+    font-family: freigtexpromed-webfont;
+    src: url("freigtexpromed-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: BebasNeue Regular;
+    src: url("BebasNeue Regular.ttf")
+}
+
+@font-face {
+    font-family: ostrich-black;
+    src: url("ostrich-black.ttf")
+}
+
+@font-face {
+    font-family: ostrich-bold;
+    src: url("ostrich-bold.ttf")
+}
+
+@font-face {
+    font-family: TESLA;
+    src: url("TESLA.ttf")
+}
+
+@font-face {
+    font-family: ostrich-light;
+    src: url("ostrich-light.ttf")
+}
+
+@font-face{
+    font-family: Champ;
+    src: url("Champ.ttf");
+}
+
+@font-face {
+    font-family: Corbert-Regular;
+    src: url("Corbert-Regular.otf") format("opentype")
+}
+
+@font-face {
+    font-family: ostrich-light;
+    src: url("ostrich-light.ttf")
+}
+
+@font-face {
+    font-family: ostrich-regular;
+    src: url("ostrich-regular.ttf")
+}
+
+@font-face {
+    font-family: ostrich-rounded;
+    src: url("ostrich-rounded.ttf")
+}
+
+@font-face {
+    font-family: Aileron-UltraLight;
+    src: url("Aileron-UltraLight.ttf")
+}
+
+.var{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.cool {
+    font-family: 'coolvetica rg', sans-serif
+}
+
+.bit{
+    font-family: 'Bitter', serif;
+}
+
+.cham{
+    font-family: 'Champ', sans-serif;
+}
+
+.max{
+    font-family: 'maax-bold-webfont', sans-serif;
+}
+
+.corr {
+    font-family: 'Corbert-Regular', sans-serif
+}
+
+.glo {
+    font-family: 'Glober Thin', sans-serif
+}
+
+.opn{
+  font-family: 'Open Sans', sans-serif;;
+}
+
+.circ {
+    font-family: 'CircularStd-Book', sans-serif
+}
+
+.ral {
+    font-family: 'Raleway', sans-serif
+}
+
+.beb {
+    font-family: 'BebasNeue Regular', sans-serif
+}
+
+.rob-con{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.fr{
+    font-family: 'freigtexpromed-webfont', sans-serif;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.rob {
+    font-family: 'Roboto', sans-serif
+}
+
+.garry {
+    font-family: 'EB Garamond', serif
+}
+
+.duru {
+    font-family: 'Duru Sans', sans-serif
+}
+
+.air {
+    font-family: 'Aileron-UltraLight', sans-serif
+}
+
+.poiret {
+    font-family: 'Poiret One', cursive
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.tesla{
+    font-family: 'TESLA', sans-serif;
+}
+
+.mont{
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.play{
+    font-family: 'Playfair Display SC', serif;;
+}
+
+.kirvy {
+    font-family: 'kirvy', sans-serif
+}
+
+.lovelo {
+    font-family: 'Lovelo Line Bold', sans-serif
+}
+
+.sor {
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+.osb {
+    font-family: 'ostrich-black', sans-serif
+}
+
+.osbo {
+    font-family: 'ostrich-bold', sans-serif
+}
+
+.osl {
+    font-family: 'ostrich-light', sans-serif
+}
+
+.osr {
+    font-family: 'ostrich-regular', sans-serif
+}
+
+.osro {
+    font-family: 'ostrich-rounded', sans-serif
+}
+/*
+.strip{
+    display: block;
+    height: 225px;
+    width: 100%;
+    position: relative;
+    top: 250px; 
+    margin-top: 100px;
+}
+
+.name{
+    font-size: 38px;
+    color: #fff;
+    font-weight: 200;
+    position: relative;
+    top: 65px;
+    //left: -180px;
+    text-align: center;
+}
+
+.desig{
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    position: relative;
+    top: 38px;
+}
+
+.sg{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(sec/anu.jpg);
+    background-size: cover;   
+}
+
+.dsg{
+    background: linear-gradient(rgba(13, 71, 161, 0.7), rgba(13, 71, 161, 0.7)), url(sec/ujwal.jpg) center center fixed;
+    background-size: cover; 
+}
+
+.dg{
+    background: linear-gradient(rgba(109, 76, 65, 0.8), rgba(109, 76, 65, 0.8)), url(sec/a.jpg) center center;
+    background-size: cover;
+}
+
+.o{
+    background: linear-gradient(rgba(255, 167, 38, 0.8), rgba(255, 167, 38, 0.8)), url(sec/v.jpg) center center fixed;
+    background-size: cover;
+}
+
+.square{
+    float: right;
+    height: 225px;
+    width: 250px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.logo{
+    height: 54px;
+    width: 145.18px;
+    margin: auto auto;
+    display: block;
+    position: relative;
+    top: 80px;
+    left: 5px;
+    -o-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    transform: scale(1.3);
+} */
+
+.main{
+    min-height: 880px;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.second{
+    height: 880px;
+    width: 100%;
+    position: absolute;
+    top: 880px;
+}
+
+.third{
+    height: 880px;
+    width: 100%;
+    position: absolute;
+    top: 1760px;
+}
+
+.logo{
+    height: 54px;
+    width: 145.18px;
+    margin: auto auto;
+    display: block;
+    position: relative;
+    top: 80px;
+    left: 5px;
+    z-index: 12;
+    -o-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.box{
+    position: absolute;
+    top: 230px;
+    background: blue;
+}
+
+.left{
+    float: left;
+    left: 0;
+}
+
+.right{
+    float: right;
+    right: 0;
+}
+
+.large{
+    position: absolute;
+    top: 0px;
+    height: 500px;
+    width: 60vw;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(sec/anu.jpg);
+    background-size: cover;   
+}
+
+.med{
+    height: 250px;
+    width: 40vw;
+}
+
+.holder{
+    height: 750px;
+    width: 40vw;
+}
+
+.main > .holder:nth-child(1){
+    width: 60vw;
+}
+
+.third > .holder{
+    top: 0;
+    width: 50vw !important;
+}
+
+.third > .holder > .large{
+    width: 50vw;
+}
+
+.third > .holder > div{
+    width: 50vw !important;
+}
+
+.third > .holder > div{
+    width: 50vw !important;
+}
+
+.third > .holder > .large{
+    background: linear-gradient(rgba(236, 236, 236, 0.8), rgba(236, 236, 236, 0.8)), url(sec/presss.jpg) center;
+    background-size: cover;     
+}
+
+.third > .holder > .large > .name{
+    color: #333;
+}
+
+.third > .holder > .large > .inf{
+    color: #333;
+    top: 175px;
+    font-size: 20px;
+    line-height: 28px;     
+}
+
+.dsg{
+    background: linear-gradient(rgba(13, 71, 161, 0.7), rgba(13, 71, 161, 0.7)), url(sec/ujwal-2.jpg) center;
+    background-size: cover;
+}
+
+.dg{
+    top: 250px !important;
+    background: linear-gradient(rgba(109, 76, 65, 0.8), rgba(109, 76, 65, 0.8)), url(sec/a.jpg) center;
+    background-size: cover;
+}
+
+.dsg, .dg, .cda, .usgl, .hosp{
+    position: absolute;
+    top: 0;
+}
+
+.dsg{
+    position: absolute !important;
+    top: 500px;
+    width: 60vw !important;
+    left: 0px !important;
+}
+
+.cda{
+    background: linear-gradient(rgba(57, 73, 171, 0.8), rgba(57, 73, 171, 0.8)), url(sec/p.jpg) center;
+    background-size: cover;
+}
+
+.usgl{
+    background: linear-gradient(rgba(229, 57, 53, 0.7), rgba(229, 57, 53, 0.7)), url(sec/s.jpg);
+    background-size: cover;
+}
+
+.dsg > .name, .dg > .name, .cda > .name, .usgl > .name, .hosp > .name, .node > .name, .pol > .name, .ip > .name{
+    position: absolute !important;
+    top: 30px;
+    left: 50px;
+}
+
+.ip > .inf{
+    left: 50px
+}
+
+.dsg > .desig, .dg > .desig, .cda > .desig, .usgl > .desig, .hosp > .desig, .node > .desig, .pol > .desig{
+    font-size: 24px;
+    position: absolute !important;
+    top: 85px;
+    left: 50px;
+}
+
+.box > *{
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.v{
+    top: 500px !important;
+    background: linear-gradient(rgba(255, 167, 38, 0.8), rgba(255, 167, 38, 0.8)), url(sec/v.jpg) 450px 450px fixed;
+    background-size: cover; 
+}
+
+.box:hover > .name, .box:hover > .desig, .box:hover > .inf{
+    opacity: .2;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+}
+
+.name{
+    font-size: 34px;
+    color: #fff;
+    font-weight: 200;
+    position: relative;
+    top: 65px;
+    float: left;
+    left: 8vw;
+}
+
+.desig{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 300;
+    position: absolute;
+    top: 115px;
+    float: left;
+    left: 8vw;
+}
+
+.inf{
+    font-size: 14px;
+    width: 300px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    position: absolute;
+    left: 8vw;
+    top: 225px;
+    text-transform: uppercase;
+}
+
+.uto-sec{
+    font-size: 36px;
+    color: #333;
+    letter-spacing: 1.2px;
+    font-weight: 200;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.abt-sec{
+    position: absolute;
+    top: 370px;
+    left: 100px;
+    width: 500px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+
+.hosp{
+    top: 500px !important;
+    background: linear-gradient(rgba(65, 131, 215, 0.8), rgba(65, 131, 215, 0.8)), url(sec/j.jpg) center center;
+    background-size: cover; 
+}
+
+.node{
+    top: 250px !important;
+    background: linear-gradient(rgba(140, 198, 63, 0.7), rgba(140, 198, 63, 0.7)), url(sec/sar.jpeg) center center;
+    background-size: cover; 
+}
+
+.pol{
+    top: 500px !important;
+    background: linear-gradient(rgba(108, 122, 137, 0.7), rgba(108, 122, 137, 0.7)), url(sec/dd.jpg) center center;
+    background-size: cover; 
+}
+
+/*
+.dg{
+    background: red !important;
+}/*
+

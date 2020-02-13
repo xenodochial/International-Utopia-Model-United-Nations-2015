@@ -1,0 +1,292 @@
+/* 
+Author : Anirudh Kasturi
+DPS GURGAON 
+***The website is not fluid responsive. BUT IT PERFECTLY FITS IN ALL DEVICES.***
+*/
+
+html{
+    height:100%; 
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+a{
+    text-decoration: none !important;
+    color: #666;
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul > a {
+    text-decoration: none;
+}
+
+h3 {
+    width: 100px
+}
+
+.verticalcenter {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+button:hover {
+    cursor: pointer
+}
+
+h1, h2, h3:hover {
+    cursor: default
+}
+
+button, h1, h2, h3, h4, h5, h6, text, a, p{
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+}
+/*
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+    -webkit-background: #8CC63F;
+}*/
+
+@font-face {
+    font-family: Lovelo Line Bold;
+    src: url("Lovelo Line Bold.ttf")
+}
+
+@font-face {
+    font-family: CircularStd-Book;
+    src: url("CircularStd-Book.otf") format("opentype")
+}
+
+@font-face {
+    font-family: coolvetica rg;
+    src: url("coolvetica rg.ttf")
+}
+
+@font-face {
+    font-family: kirvy;
+    src: url("Kirvy-Light.ttf")
+}
+
+@font-face {
+    font-family: Glober Thin;
+    src: url("Glober Thin.ttf")
+}
+
+@font-face{
+    font-family: maax-bold-webfont;
+    src: url("maax-bold-webfont.woff") format("woff");
+}
+
+@font-face{
+    font-family: freigtexpromed-webfont;
+    src: url("freigtexpromed-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: BebasNeue Regular;
+    src: url("BebasNeue Regular.ttf")
+}
+
+@font-face {
+    font-family: ostrich-black;
+    src: url("ostrich-black.ttf")
+}
+
+@font-face {
+    font-family: ostrich-bold;
+    src: url("ostrich-bold.ttf")
+}
+
+@font-face {
+    font-family: TESLA;
+    src: url("TESLA.ttf")
+}
+
+@font-face {
+    font-family: ostrich-light;
+    src: url("ostrich-light.ttf")
+}
+
+@font-face{
+    font-family: Champ;
+    src: url("Champ.ttf");
+}
+
+@font-face {
+    font-family: Corbert-Regular;
+    src: url("Corbert-Regular.otf") format("opentype")
+}
+
+@font-face {
+    font-family: ostrich-light;
+    src: url("ostrich-light.ttf")
+}
+
+@font-face {
+    font-family: ostrich-regular;
+    src: url("ostrich-regular.ttf")
+}
+
+@font-face {
+    font-family: ostrich-rounded;
+    src: url("ostrich-rounded.ttf")
+}
+
+@font-face {
+    font-family: Aileron-UltraLight;
+    src: url("Aileron-UltraLight.ttf")
+}
+
+.cool {
+    font-family: 'coolvetica rg', sans-serif
+}
+
+.bit{
+    font-family: 'Bitter', serif;
+}
+
+.cham{
+    font-family: 'Champ', sans-serif;
+}
+
+.max{
+    font-family: 'maax-bold-webfont', sans-serif;
+}
+
+.corr {
+    font-family: 'Corbert-Regular', sans-serif
+}
+
+.glo {
+    font-family: 'Glober Thin', sans-serif
+}
+
+.opn{
+  font-family: 'Open Sans', sans-serif;;
+}
+
+.circ {
+    font-family: 'CircularStd-Book', sans-serif
+}
+
+.ral {
+    font-family: 'Raleway', sans-serif
+}
+
+.beb {
+    font-family: 'BebasNeue Regular', sans-serif
+}
+
+.fr{
+    font-family: 'freigtexpromed-webfont', sans-serif;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.rob {
+    font-family: 'Roboto', sans-serif
+}
+
+.garry {
+    font-family: 'EB Garamond', serif
+}
+
+.duru {
+    font-family: 'Duru Sans', sans-serif
+}
+
+.air {
+    font-family: 'Aileron-UltraLight', sans-serif
+}
+
+.poiret {
+    font-family: 'Poiret One', cursive
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.tesla{
+    font-family: 'TESLA', sans-serif;
+}
+
+.mont{
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.kirvy {
+    font-family: 'kirvy', sans-serif
+}
+
+.lovelo {
+    font-family: 'Lovelo Line Bold', sans-serif
+}
+
+.sor {
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+.osb {
+    font-family: 'ostrich-black', sans-serif
+}
+
+.osbo {
+    font-family: 'ostrich-bold', sans-serif
+}
+
+.osl {
+    font-family: 'ostrich-light', sans-serif
+}
+
+.osr {
+    font-family: 'ostrich-regular', sans-serif
+}
+
+.osro {
+    font-family: 'ostrich-rounded', sans-serif
+}
+
+
+.logo{
+    height: 50px;
+    width: 145.18px;
+    margin: auto auto;
+    display: block;
+    position: relative;
+    left: -3px;
+    top: 30vh;
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.soon{
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    top: 230px;
+    color: #333;
+}
